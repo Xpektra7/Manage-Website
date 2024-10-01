@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  transition: .3s;
+}
+body{
+  background-image: url('../images/bg-tablet-pattern.svg');
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: 90% -25%;
+}
+#cta{
+  background-image: url('../images/bg-simplify-section-desktop.svg');
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+#features{
+  background-image: url('../images/bg-tablet-pattern.svg');
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position-x:-50%;
+  background-position-y: -100%;
+}
+::-webkit-scrollbar{
+  width: .5rem;
+}
+::-webkit-scrollbar-track{
+  background-color: hsl(12, 88%, 90%);
+  border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb{
+  background-color:hsl(12, 88%, 69%);
+  border-radius:.5rem;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color:hsl(12, 88%, 59%);
+}
+
+@media(max-width:576px){
+  body{
+    background-position: 50px -50px;
+    background-size: 500px;
+  }
+  #cta{
+    background-image: url('../images/bg-simplify-section-mobile.svg');
+  }
+}
